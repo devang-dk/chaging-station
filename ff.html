@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.slowFade {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.slowFade .slide img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(1.5) rotate(15deg);
+    -webkit-animation: slowFade 32s infinite;
+            animation: slowFade 32s infinite;
+}
+.slowFade .slide:nth-child(3) img {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+}
+.slowFade .slide:nth-child(2) img {
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
+}
+.slowFade .slide:nth-child(1) img {
+    -webkit-animation-delay: 24s;
+            animation-delay: 24s;
+}
+@keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes slowFade {
+    25% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+    40% {
+        opacity: 0;
+    }
+}
+  
+   hr {
+    border: 3px solid aliceblue;
+   }
+    </style>
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img style="border-radius: 50%;" src="EVistu.jpeg" alt="error" height="50" width="50">
+            <span class="ml-3 text-xl">Eco-Charge</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="kk.html" class="mr-5 hover:text-gray-900">About</a>
+            <a href="fk.html" class="mr-5 hover:text-gray-900">Contact</a>
+          </nav>
+        </div>
+      </header>
+      <section>
+      <div class="slides slowFade">
+        <div class="slide">
+            <img src="1.webp" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="2.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="3.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+            <img src="4.jpg" alt="img"/>
+        </div>
+    </div>
+      </section>
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><em>“Electric cars are not only the future,  but they are also the present.”</em>
+              <br class="hidden lg:inline-block">- Carlos Ghosn
+            </h1>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?electricvehicles,chargingstation">
+          </div>
+        </div>
+      </section>
+      <section class="text-black-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="https://images.wapcar.my/file1/896d0bb80f58439784edcd61fec0005c_800.jpg">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <p class="mb-8 leading-relaxed">The number of electric cars on the world’s roads has been growing rapidly in the past decade. At the end of 2020, there were 10 million electric cars. This number increased by about 65% in 2021, reaching about 16.5 million electric cars. By mid-2022, the number of electric cars surpassed 20 million.</p>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">How EV-Charging stations are being a great median to save our Environment</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Electric quicker charging stations not only facilitate convenient and efficient charging for EV users but also contribute to a greener and more sustainable future by reducing pollution and promoting the development of eco-friendly technologies.</p>
+            <hr>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Firstly, quicker charging stations reduce the reliance on the conventional gas-powered vehicle, thereby curing greenhouse gas emmission and air pollutants. As more Evs charge rapidly, the overall carbon footprint of the transportation sector decreases, positively impacting the quality of air and public health.</p>
+            <hr>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Secondly, the widespred availability of fast charging station. encourages greater EV adoption. This, in turn, stimulates innovation in battery technology and production methods, fastering mow sustainable practices within the automotive industry. Additionally, increased demand for electric vehicle prompts investments in renewable energy sources, aligning the charging process with cleaner energy production.</p>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://electrek.co/wp-content/uploads/sites/3/2017/12/ultra-e.jpg?quality=82&strip=all">
+              </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Requirements for EV Public Charging Station (PSA) Installation</h2>
+              <p class="leading-relaxed text-base">
+                <ul>
+                  <strong><li>Parking space for electric cars</li></strong>
+                  <strong><li>Space for the charging machines</li></strong>
+                  <strong><li>One transformer</li></strong>
+                  <strong><li>Cable transmission</li></strong>
+                  <strong><li>The area where charging stations are assigned must be safe and secure</li></strong>
+                  <strong><li>Has at least 5 charging machines</li></strong>
+                </ul>
+              </p>
+            </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" src="gov of india.jpeg" width="270" height="270" style="display:block;margin-left:auto;margin-right:auto;">
+              </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Steps taken by the Government to promote charging infrastructure for EVs</h2>
+              <a href="gov.pdf" download><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">DOWNLOAD PDF</button></a>
+              <a href="gov1.pdf" download><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">DOWNLOAD PDF</button></a>
+              <a href="gov 2.pdf" download><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">DOWNLOAD PDF</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center" src="Screenshot 2023-11-02 221012.png" width="730" height="730">
+            </div>
+            <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3" style="text-align:center;">Five ISO-certified charging machines</h2>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="Milton banner.jpg">
+            </div>
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+              </div>
+              <div style="text-align: left;">
+                <h2 style="font-size: x-large; color: black;"><b>Required Locations of PCSs</b></h2>
+                <p class="leading-relaxed text-lg mb-4">
+                  <ol>
+                    <li>1. At least one charging station must be installed in a 3x3-kilometer grid.</li>
+                    <li>2. One charging station must be set up every 25 kilometers on highways/roads’ both sides.</li>
+                    <li>3. For long-range and heavy EVs, one Fast Charging Station should also be available on each side of the highways.</li>
+                    <li>4. In cities, charging stations should be located within Transport Nagars and bus depots.</li>
+                    <li>5. The appropriate authorities (State/Central/UTs) can also give priority to the current retail outlets (ROs) of Oil Marketing Companies (OMCs) in the permission to install of PCSs.</li>
+                  </ol>
+                </p>    
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Top EV Charging Solution providers in India</h1>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class=" rounded-lg flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="jio-bp.jpg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-green-200 bg-black opacity-0 hover:opacity-50">
+                  <h1 class="title-font text-lg font-medium text-white-900 mb-3">JIO-BP</h1>
+                  <a href="https://www.jiobp.com/"><button class="flex mx-auto mt-6 text-white bg-black-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Visit</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0" src="TATA.jpeg" width="270" height="270" style="display:block;margin-left:auto;margin-right:auto;">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-blue-200 bg-black opacity-0 hover:opacity-50">
+                  <h1 class="title-font text-lg font-medium text-white-900 mb-3">TATA POWER</h1>
+                  <a href="https://www.tatapower.com/"><button class="flex mx-auto mt-6 text-white bg-black-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Visit</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="exicom.jpg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-black-200 bg-black opacity-0 hover:opacity-50">
+                  <h1 class="title-font text-lg font-medium text-white-900 mb-3">EXICOM</h1>
+                  <a href="https://exicom.in/"><button class="flex mx-auto mt-6 text-white bg-black-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Visit</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="ABB.png">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-red-200 bg-black opacity-0 hover:opacity-50">
+                  <h1 class="title-font text-lg font-medium text-white-900 mb-3">ABB INDIA</h1>
+                  <a href="https://new.abb.com/indian-subcontinent"><button class="flex mx-auto mt-6 text-white bg-black-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Visit</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="DELTA.png">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-blue-200 bg-black opacity-0 hover:opacity-50">
+                  <h1 class="title-font text-lg font-medium text-white-900 mb-3">DELTA ELECTRONICS INDIA</h1>
+                  <a href="https://deltaelectronicsindia.com/"><button class="flex mx-auto mt-6 text-white bg-black-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Visit</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/3 sm:w-1/2 p-4">
+              <div class="flex relative">
+                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="fortum.jpeg">
+                <div class="px-8 py-10 relative z-10 w-full border-4 border-green-200 bg-black opacity-0 hover:opacity-50">
+                  <h1 class="title-font text-lg font-medium text-white-900 mb-3">FORTUM</h1>
+                  <a href="https://www.fortum.com/"><button class="flex mx-auto mt-6 text-white bg-black-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Visit</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img style="border-radius: 50%;" src="EVistu.jpeg" alt="error" height="50" width="50">
+            <span class="ml-3 text-xl">Eco-Charge</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Eco-Charge
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+</body>
+</html>
